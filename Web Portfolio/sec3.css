@@ -1,0 +1,152 @@
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 100px;
+}
+
+.sec-3-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-3-2, .sec-3-3 {
+    display: flex;
+    gap: 50px;
+}
+
+.box-2-1, .box-2-2{
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.box-2-2 {
+    margin-top: -40px;
+}
+
+.box-2-1 > :nth-child(1), .box-2-2 > :nth-child(1) {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.skillset {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+}
+
+.skills-1 {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.skills-1 img {
+    width: 30px;
+}
+
+.skills-1-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-1-2 > :nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media(max-width: 1024px) {
+
+    .sec-3-2, .sec-3-3 {
+        flex-direction: column;
+    }
+
+    .sec-3-3 {
+        margin-top: -50px;
+    }
+
+    .box-2-2 {
+        margin-top: 0px;
+    }
+
+    .box-2-1, .box-2-2{
+        width: 500px;
+        gap: 15px;
+    }
+
+    .box-2-1 > :nth-child(1), .box-2-2 > :nth-child(1) {
+        font-size: 28px;
+    }
+
+    .skillset {
+        gap: 50px;
+    }
+
+    .skills-1 {
+        display: flex;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .skills-1 img {
+        width: 35px;
+    }
+
+    .skills-1-2 > :nth-child(1) {
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 767px) {
+    
+
+    .sec-3-2, .sec-3-3 {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .sec-3-3 {
+        margin-top: -50px;
+    }
+
+    .box-2-1, .box-2-2{
+        width: 300px;
+        gap: 25px;
+    }
+
+    .box-2-1 > :nth-child(1), .box-2-2 > :nth-child(1) {
+        font-size: 18px;
+    }
+
+    .skillset {
+        gap: 25px;
+    }
+
+    .skills-1 {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .skills-1 img {
+        width: 30px;
+    }
+
+    .skills-1-2 > :nth-child(1) {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 345px) {
+    .box-2-1, .box-2-2{
+        width: 275px;
+    }
+}
