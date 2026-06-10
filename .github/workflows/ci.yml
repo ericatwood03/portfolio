@@ -1,0 +1,14 @@
+name: Continous Integration
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - run: test -f "Web Portfolio/index.html"
+      - run: find "Web Portfolio" -name "*.js" -exec node --check {} \;
